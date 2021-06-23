@@ -1,0 +1,7 @@
+_site
+_drafts
+dev_files
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+_posts/examples
