@@ -1,7 +1,20 @@
-_site
+# Me
 _drafts
 dev_files
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
 _posts/examples
+
+# Ruby Gem
+*.gem
+.bundle
+Gemfile.lock
+**/vendor/bundle
+
+# macOS
+.DS_Store
+
+# Jekyll generated files
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
