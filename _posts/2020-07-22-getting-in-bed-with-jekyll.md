@@ -62,5 +62,5 @@ Check out your fancy new site in a browser: [https://sup.test](https://sup.test)
 Finally, if you are actively working on your Jekyll project and want to render file saves in real-time, you can run the command with a watch flag:
 	`bundle exec jekyll build --watch`
 
-**Hot Tip** 💁‍♂️ Don't change your TLD to `.dev` or it cause issues with genuine websites that use this TLD - most probably long after you have forgotten you installed Valet.
+**Hot Tip** 💁‍♂️ Don't change your TLD to `.dev` or it will cause issues with genuine websites that use this TLD - most probably long after you have forgotten you installed Valet.
 {: .notice--warning}
