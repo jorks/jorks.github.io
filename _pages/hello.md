@@ -8,7 +8,7 @@ If you've found your way here it's probably because of all the Google keywords h
 
 My passion is enabling people to do their best work through technology - while I get to *nerd out* along the way.
 
-While my focus is Apple in the enterprise, I have first-hand experience and a deep understanding of enterprise architecture and technologies - Windows, Azure, Identity, Network & Security.
+While my focus is Apple in the enterprise, I have a decade of experience with enterprise architecture and core technologies - Windows, Azure, Identity, Network & Security.
 
 I currently have the pleasure of applying my experience at Jamf, helping our key enterprise customers succeed with Apple.
 
