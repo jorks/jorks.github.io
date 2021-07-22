@@ -60,8 +60,8 @@ atom_feed:
 
 # Site Search
 search                   : "true"
-search_full_content      : "false"
-search_provider          : "lunr" # lunr (default), algolia, google
+search_full_content      : 
+search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -94,9 +94,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-VECB790M4L"
     anonymize_ip         : # true, false (default)
 
 
