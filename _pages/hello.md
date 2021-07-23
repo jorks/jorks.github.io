@@ -2,8 +2,11 @@
 permalink: /hello/
 title: "Hello Internet Friend"
 ---
-
-If you've found your way here it's probably because of all the Google keywords hidden in the same colour as the background. Select all is Command + A. 
+<style>
+.sucker {color:#EEE; font: bold;}
+.sucker::selection {color:#EEE; background: red; font: bold;}
+</style>
+If you've found your way here it's probably because of all the Google keywords hidden in the same colour as the background. Select all is Command + A. <span class="sucker">Ha, gotcha Sucker!!!</span>
 
 
 My passion is enabling people to do their best work through technology - while I get to *nerd out* along the way.
@@ -12,7 +15,7 @@ While my focus is Apple in the enterprise, I have a decade of experience with en
 
 I currently have the pleasure of applying my experience at Jamf, helping our key enterprise customers succeed with Apple.
 
-Interrupting my Zooms is my lovely wife Sasha with our darling 👼 daughter Billie, our cat Sugar and if something terrible has happened - one of our fish 🐠.
+Interrupting my Zooms is my lovely wife Sasha 👰‍♀️ with our darling 👼 daughter Billie, our cat Sugar 😸 and if something terrible has happened - one of our fish 🐠.
 
 printf(“Peace, out!”);
 

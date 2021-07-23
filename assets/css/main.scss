@@ -7,6 +7,12 @@
 /*Custom Edits*/
 /*$link-color: red;*/
 
+.page__footer {
+	/*044 Shy Rainbow - https://cssgradient.io/gradient-backgrounds/*/
+	background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+
 /*Skin*/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
