@@ -13,7 +13,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-remote_theme             : "mmistakes/minimal-mistakes@4.23.0" # Last version was 4.20.2 22/06/2021:
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0" # Last version was 4.20.2 22/06/2021:
 minimal_mistakes_skin    : "air" # my custom theme will be "jorks"
 
 # Site Settings
@@ -106,7 +106,7 @@ author:
   avatar           : "/assets/images/jc_avatar.jpg"
   bio              : "Computers Rock 💻🪨"
   location         : "Melbourne, Australia"
-  email            : "me@jorks.net"
+  email            : #"me@jorks.net"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -114,6 +114,12 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jamescorc/"
+    - label: " Email"
+      icon: "far fa-paper-plane"
+      url: "mailto:me@jorks.net"
+    - label: ""
+      icon: "fas fa-headphones"
+      url: "/music/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/jerkran/"
@@ -196,7 +202,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:year/:month/:title/
+permalink: /:year/:month/:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Australia/Melbourne" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -255,11 +261,14 @@ compress_html:
   ignore:
     envs: development
 
-# Collections - commented out
+
+
+# Collections - Not in use.
 # collections:
-#   jamf:
+#   mixes:
 #     output: true
-#     permalink: /:collection/:path/
+#     permalink: /:year/:month/:categories/:title/
+
 
 # Defaults
 defaults:
@@ -282,6 +291,5 @@ defaults:
     values:
       layout: single
       author_profile: true
-
 
 
