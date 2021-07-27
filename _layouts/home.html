@@ -6,20 +6,13 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-<!-- I have added a unless statement to filter out any posts about music. -->
+{% assign posts = paginator.posts %}
+<!-- Note to myself - I hide the music posts with a front matter attribute --> 
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% unless post.categories contains 'Music' %}
-      {% include archive-single.html type=entries_layout %}
-    {% endunless %}
+    {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
 

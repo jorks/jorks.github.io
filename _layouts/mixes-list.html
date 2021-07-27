@@ -4,15 +4,12 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Listent to a Mix!" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Listen to a Mix!" }}</h3>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+{% assign posts = site.posts %}
 
-<!-- Target the category of Music -->
+<!-- Targeting posts with a category of music -->
+<!-- Note to myself - for pagination on this page I would need to look at using the updated plugin which is not supported by GitHub = PIA -->
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
@@ -22,5 +19,3 @@ layout: archive
     {% endif %}
   {% endfor %}
 </div>
-
-{% include paginator.html %}
