@@ -1,19 +1,15 @@
 /* ==========================================================================
-   Jorks Skin
+   Jorks Skin - WIP - Not In Use
    ========================================================================== */
-/* To be completed
-	- Skin loads and work when set in _config.yaml
-	- Need to map out the elements and pick a color pallet 
-	- Terminal Sexy has some good inspo.
-*/
+
 /* Colors */
-$background-color: #F3F3F3 !default;
-$text-color: #707070 !default;
-$muted-text-color: #4EC2E8 !default;
+$background-color: #F0F0F1 !default;
+$text-color: #222831 !default;
+$muted-text-color: #393e46 !default;
 $primary-color: #0092ca !default;
-$border-color: mix(#fff, #4EC2E8, 75%) !default;
+$border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
-$link-color: #4EC2E8 !default;
+$link-color: #393e46 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;

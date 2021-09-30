@@ -1,20 +1,24 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter
 ---
 
 @charset "utf-8";
-
-/*Custom Edits*/
-/*$link-color: red;*/
-
-.page__footer {
-	/*044 Shy Rainbow - https://cssgradient.io/gradient-backgrounds/*/
-	background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-}
-
 
 /*Skin*/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
 /*Main Partials*/
 @import "minimal-mistakes";
+
+/*Custom Edits*/
+/*$link-color: red;*/
+
+.page__footer {
+	/*044 Shy Rainbow - https://cssgradient.io/gradient-backgrounds/*/
+	/*background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);*/
+	background-color: #373737;
+	border-top: solid 15px transparent;
+    background-image: linear-gradient(#373737,#373737), linear-gradient(45deg, #9a00ee 0%, #2ce6ce 100%);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}

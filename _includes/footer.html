@@ -1,22 +1,12 @@
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
+   <ul class="social-icons">
+      <li><a href="https://github.com/jorks/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" style="color:#F6F8FA;" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/jamescorc/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+   </ul>
 </div>
 <div>
-  <div class="page__footer-copyright" style="width: 30%; float: left;">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>
-  <div class="page__footer-copyright" id="again" style="cursor: pointer; width: 70%; float: left; text-align: right;"><em><span id="quote"> </span></em> <i class="fas fa-jedi"></i></div>
+   <div class="page__footer-copyright" style="width: 30%; float: left;">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>
+   <div class="page__footer-copyright" id="again" style="cursor: pointer; width: 70%; float: left; text-align: right;"><em><span id="quote"> </span></em> <i class="fas fa-jedi" style="color:#FFFFFF;"></i></div>
 </div>
 <script type="text/javascript" src="/assets/js/custom-starwars-quotes.js"></script>
