@@ -5,7 +5,7 @@ tags:
   - Jekyll
   - Laravel
 ---
-Running Jekyll on macOS is reasonably simple thanks to Homebrew and the docs at [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/). However, I already have a much-loved tool for my local dev playground, [Larvel Valet](https://laravel.com/docs/7.x/valet). Valet is always on, clean and lighting fast. If you're not familiar with Valet:
+Running Jekyll on macOS is reasonably simple thanks to Homebrew and the docs at [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/){:target="_blank"}. However, I already have a much-loved tool for my local dev playground, [Larvel Valet](https://laravel.com/docs/7.x/valet){:target="_blank"}. Valet is always on, clean and lighting fast. If you're not familiar with Valet:
 
 > Valet is a Laravel development environment for Mac minimalists. Laravel Valet configures your Mac to always run Nginx in the background when your machine starts. Then, using DnsMasq, Valet proxies all requests on the .test domain to point to sites installed on your local machine.
 
@@ -13,7 +13,7 @@ Valet serves your sites with nice domain names and https certificates ~ projects
 
 ## The Building Blocks
 
-As with everything fun on macOS, you will need [Homebrew](https://brew.sh/). You should review the official macOS guide at [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/) before reading on. 
+As with everything fun on macOS, you will need [Homebrew](https://brew.sh/){:target="_blank"}. You should review the official macOS guide at [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/){:target="_blank"} before reading on. 
 
 _This article is my real-world experience following the instructions, my style guide and my reference as I inevitably forget everything._
 
@@ -37,13 +37,13 @@ I only use Ruby for Jekyll, so I am not going to use `rbenv`, a more flexible ap
 
 - `mkdir ~/Sites/sup && cd ~/Sites/sup` make a project folder
 - `jekyll new ~/Sites/sup` initiate a new Jekyll project
-- `jekyll serve` will build your project into `_sites` folder serve it locally, visit [http://localhost:4000/](http://localhost:4000/).
+- `jekyll serve` will build your project into `_sites` folder serve it locally, visit [http://localhost:4000/](http://localhost:4000/){:target="_blank"}.
 
 At this point, you have a working Jekyll dev environment, but we can make this much nicer. Let's install valet and beautify our ugly localhost:port URL and give it a shiny SSL cert 🔐.
 
 **Using Laravel Valet with Jekyll**
 
-Install [Valet](https://laravel.com/docs/7.x/valet#installation) as per their instructions.
+Install [Valet](https://laravel.com/docs/7.x/valet#installation){:target="_blank"} as per their instructions.
 
 Valet has a few options for proxying your local dev workspaces to nice URLs (`park`, `proxy` and `link`), for our Jekyll project we are going to use `link` in combination with `jekyll build` (instead of `jekyll serve`). This will ensure our website always loads locally without an open Jekyll terminal.
 

@@ -8,7 +8,7 @@ tags:
 ---
 Logs suck! Actually they're great, what I really mean is they're not the easiest to read and often most useful when the pressure is on. 
 
-**[JamfLog](http://github.com/jorks/sublime-jamflog)** is a [Sublime Text](http://www.sublimetext.com/) syntax highlighter for [Jamf Pro](http://jamf.com) server logs. It makes Jamf Logs easier for humans.
+**[JamfLog](http://github.com/jorks/sublime-jamflog){:target="_blank"}** is a [Sublime Text](http://www.sublimetext.com/){:target="_blank"} syntax highlighter for [Jamf Pro](http://jamf.com){:target="_blank"} server logs. It makes Jamf Logs easier for humans.
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Logs suck! Actually they're great, what I really mean is they're not the easiest
 
 ## How to install Jamf Log
 
-JamfLog is available via Sublime Text’s built-in _App Store_ aka [Package Control](https://packagecontrol.io/).
+JamfLog is available via Sublime Text’s built-in _App Store_ aka [Package Control](https://packagecontrol.io/){:target="_blank"}.
 
 **Video Instructions:** 📺 Watch [JamfLog for Sublime Text - Install Instructions and Usage](https://www.youtube.com/watch?v=iqHyu3vG48w){:target="_blank"} on YouTube. 
 {: .notice--info}

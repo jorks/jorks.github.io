@@ -20,7 +20,7 @@ AMD something something card.
 The plan for this new-old Mac is to host daily workflows:
 
 - Automated macOS testing workflows using a combination of AutoDMG, vFuse, VMWare for testing packages, DEP and beta releases.
-- Host a dedicated AutoPkg environment. I'm also interested to try [PatchBot](https://macintoshguy.wordpress.com/2020/07/03/patchbot/), just announced for vJNUC2020.
+- Host a dedicated AutoPkg environment. I'm also interested to try [PatchBot](https://macintoshguy.wordpress.com/2020/07/03/patchbot/){:target="_blank"}, just announced for vJNUC2020.
 
 ### TL;DR - The Process
 
@@ -42,8 +42,8 @@ If however, you are using an older hand-me-down Mac, you have the option to hack
 Newer versions of macOS require a higher `virtualhw.version`, which in turn, require a higher ESXi version.
 
 - macOS 10.14 Mojave - Minimum `virtualhw.version = "14"` requires ESXi 6.7
-- macOS 10.15 Catalina - Minimum `virtualhw.version = "15"` requires ESXi 6.7 Update 3 ([VMWare KB Article](https://kb.vmware.com/s/article/78980))
-- macOS 11 Big Sur 🤷‍♂️ - virtuallyGhetto has a [post](https://www.virtuallyghetto.com/2020/06/macos-10-16-big-sur-beta-1-on-esxi.html) with it running on ESXi 6.7
+- macOS 10.15 Catalina - Minimum `virtualhw.version = "15"` requires ESXi 6.7 Update 3 ([VMWare KB Article](https://kb.vmware.com/s/article/78980){:target="_blank"})
+- macOS 11 Big Sur 🤷‍♂️ - virtuallyGhetto has a [post](https://www.virtuallyghetto.com/2020/06/macos-10-16-big-sur-beta-1-on-esxi.html){:target="_blank"} with it running on ESXi 6.7
 
 Let's move on.
 
@@ -51,14 +51,14 @@ Let's move on.
 
 Check out these very detailed guides on VirtuallyWired, complete with pictures and terminal output:
 
-- [Create a Bootable ESXi 6.X Installer USB Flash Drive on macOS](https://virtuallywired.io/2019/08/18/create-a-bootable-esxi-installer-usb-flash-drive-on-macos/)
-- [Create a Bootable ESXi 7 USB Installer on macOS](https://virtuallywired.io/2020/08/01/create-a-bootable-esxi-7-usb-installer-on-macos/)
+- [Create a Bootable ESXi 6.X Installer USB Flash Drive on macOS](https://virtuallywired.io/2019/08/18/create-a-bootable-esxi-installer-usb-flash-drive-on-macos/){:target="_blank"}
+- [Create a Bootable ESXi 7 USB Installer on macOS](https://virtuallywired.io/2020/08/01/create-a-bootable-esxi-7-usb-installer-on-macos/){:target="_blank"}
 
 _Note: Start by creating an installer that is compatible with your host Mac._
 
 ### Install ESXi
 
-With the USB installer inserted, boot the Mac holding `option` and follow the prompts. Configure your network preferences and [enable SSH](http://www.virtubytes.com/2017/04/21/enable-ssh-vmware-esxi-6-5/).
+With the USB installer inserted, boot the Mac holding `option` and follow the prompts. Configure your network preferences and [enable SSH](http://www.virtubytes.com/2017/04/21/enable-ssh-vmware-esxi-6-5/){:target="_blank"}.
 
 ### Upgrade ESXi
 
@@ -83,7 +83,7 @@ SSH into your ESXi host:
 	esxcli network firewall ruleset set -e true -r httpClient
 	```
 
-3. Find your desired version - Refer to the [VMWare article for build numbers](https://kb.vmware.com/s/article/2143832)
+3. Find your desired version - Refer to the [VMWare article for build numbers](https://kb.vmware.com/s/article/2143832){:target="_blank"}
 
 	```bash
 	esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml
@@ -134,8 +134,8 @@ When creating VMs, you must consider the ESXi and macOS requirements, ensuring t
 
 If you have ever been down the path of using a Mac as an ESXi hypervisor, you are probably familiar with some of the challenges. A collection of helpful resources:
 
-- [virtuallyGhetto](https://www.virtuallyghetto.com/apple) blog by William Lam. Most of your Googling about ESXi home-labs will lead you back to virtuallyGhetto, so start at the source.
-- [Der Flounder](https://derflounder.wordpress.com/category/vmware-esxi/) by Rich Trouton. Has a great collection of posts about ESXi with a Mac focus
-- [VMWare Compatibility Guide](https://www.vmware.com/resources/compatibility/search.php) - Understand what is supported, then choose to do something that isn't.
-- [VMWare Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf) - important for guest OS to ESXi version matching.
-- [VMware  Download Center](https://my.vmware.com/group/vmware/evalcenter?p=free-esxi6) - Don't forget to save the **license key** for later.
+- [virtuallyGhetto](https://www.virtuallyghetto.com/apple){:target="_blank"} blog by William Lam. Most of your Googling about ESXi home-labs will lead you back to virtuallyGhetto, so start at the source.
+- [Der Flounder](https://derflounder.wordpress.com/category/vmware-esxi/){:target="_blank"} by Rich Trouton. Has a great collection of posts about ESXi with a Mac focus
+- [VMWare Compatibility Guide](https://www.vmware.com/resources/compatibility/search.php){:target="_blank"} - Understand what is supported, then choose to do something that isn't.
+- [VMWare Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf){:target="_blank"} - important for guest OS to ESXi version matching.
+- [VMware  Download Center](https://my.vmware.com/group/vmware/evalcenter?p=free-esxi6){:target="_blank"} - Don't forget to save the **license key** for later.

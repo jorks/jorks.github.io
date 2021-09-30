@@ -8,11 +8,11 @@ tags:
 ---
 Recently I needed to deploy Minecraft: Education Editon to a few hundred Macs enrolled in Jamf Pro. A simple task, except for the fact the customer only had on-site distribution points for packages, and all the Macs were off-site for remote learning during COVID. Immediately I started counting my options, set up an AWS cloud distribution point, host the package on a web server and script the download and install, or write a custom script to run on the devices.
 
-Then I remembered the Mac Admins Podcast discussing [Installomator](https://github.com/scriptingosx/Installomator) by Armin Briegel over at [Scripting OS X](https://scriptingosx.com/). 
+Then I remembered the Mac Admins Podcast discussing [Installomator](https://github.com/scriptingosx/Installomator){:target="_blank"} by Armin Briegel over at [Scripting OS X](https://scriptingosx.com/){:target="_blank"}. 
 
 <!--more-->
 
-The idea of Installomator is simple, download a package directly from the vendor and use a processor to handle the vendor's _flavour_ of distribution and install techniques. It is similar to running the AutoPkg processors on the client computer. After reading the goals of the project on the [Github README](https://github.com/scriptingosx/Installomator#goals) I was sold.
+The idea of Installomator is simple, download a package directly from the vendor and use a processor to handle the vendor's _flavour_ of distribution and install techniques. It is similar to running the AutoPkg processors on the client computer. After reading the goals of the project on the [Github README](https://github.com/scriptingosx/Installomator#goals){:target="_blank"} I was sold.
 
 **Spoiler alert** - this tool delivered on all its promises.
 {: .notice--success}

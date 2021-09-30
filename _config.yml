@@ -20,15 +20,15 @@ minimal_mistakes_skin    : "air" # my custom theme will be "jorks"
 locale                   : "en-AU"
 title                    : "Jorks.net"
 title_separator          : "|"
-subtitle                 : "Making Internet" # site tagline that appears below site title in masthead
+subtitle                 : #"Making Internet" # site tagline that appears below site title in masthead
 name                     : "James Corcoran"
 description              : "Computers Rock 💻🪨"
 url                      : "https://jorks.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jorks/jorks.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/jorks_logo.png" # path of logo image to display in the masthead, JC - https://colorhunt.co/palette/196240
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/JORKS_NET-07E.png" # path of logo image to display in the masthead, JC - https://colorhunt.co/palette/196240
+masthead_title           : " "# overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 100
 
@@ -117,9 +117,6 @@ author:
     - label: "Email"
       icon: "far fa-fw fa-paper-plane"
       url: "mailto:me@jorks.net"
-    - label: ""
-      icon: "fas fa-fw fa-headphones"
-      url: "/music/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/jerkran/"
