@@ -7,15 +7,41 @@
 /*Skin*/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
+
+
 /*Main Partials*/
 @import "minimal-mistakes";
 
 /*Custom Edits*/
 /*$link-color: red;*/
 
+/*This makes the hover text a linear-gradient*/
+.greedy-nav .visible-links {
+	a {
+	  position: relative;
+
+	  &:before {
+	    background-image: linear-gradient(45deg, #9a00ee 0%, #2ce6ce 100%);
+	  }
+	}
+}
+
+/*This makes the search icon a gradient*/
+.fa-search:before {
+	background: -webkit-gradient(linear, left top, left bottom, from(#9a00ee), to(#2ce6ce));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: initial; /* reset Font Awesome's display:inline-block */
+}
+
+/*This makes the active pagination box a gradient*/
+.pagination li a.current, .pagination li a.current.disabled {
+    color: #fff;
+    background-image: linear-gradient(45deg, #9a00ee 0%, #2ce6ce 100%);
+}
+
+/*This colours the footer and gives it a top boarder*/
 .page__footer {
-	/*044 Shy Rainbow - https://cssgradient.io/gradient-backgrounds/*/
-	/*background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);*/
 	background-color: #373737;
 	border-top: solid 15px transparent;
 	background-image: linear-gradient(#373737,#373737), linear-gradient(45deg, #9a00ee 0%, #2ce6ce 100%);
